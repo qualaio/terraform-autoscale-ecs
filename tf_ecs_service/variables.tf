@@ -7,11 +7,11 @@ variable "cluster_name" {
 }
 
 variable "task_name" {
-  type = "string"
+  type = string
 }
 
 variable "environment" {
-  type = "string"
+  type = string
 }
 
 variable "container_port" {
@@ -62,7 +62,7 @@ variable "deployment_maximum_percent" {
 }
 
 variable "image_tag" {
-  type = "string"
+  type = string
 }
 
 variable "containers_desired" {
@@ -117,7 +117,7 @@ variable "livecheck_timeout" {
 }
 
 variable "vpc_id" {
-  type = "string"
+  type = string
 }
 
 variable "log_group_region" {

@@ -29,32 +29,32 @@ variable "asg_desired" {
 }
 
 variable "private_subnets" {
-  type = "list"
+  type = list(string)
 }
 
 variable "cluster_name" {
-  type = "string"
+  type = string
 }
 
 # The name of an ssh key to use
 variable "key_name" {
-  type    = "string"
+  type    = string
   default = ""
 }
 
 variable "lb_security_group" {
-  type    = "string"
+  type    = string
   default = ""
 }
 
 variable "lb_security_groups" {
   description = "security groups to allow to the cluster"
-  type        = "list"
+  type        = list(string)
   default     = []
 }
 
 variable "vpc_id" {
-  type = "string"
+  type = string
 }
 
 variable "cluster_memory_scale_out" {
